@@ -5,6 +5,8 @@ class LoginPage extends StatefulWidget {
   State<StatefulWidget> createState() => new _LoginPageState();
 }
 class _LoginPageState extends State<LoginPage>{
+  String _email;
+  String _password;
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -12,8 +14,23 @@ class _LoginPageState extends State<LoginPage>{
             title: Text('Login'),
           ),
           body: new Container(
-            child: new Text('data')
-          )
+            child: new Form(
+              child: new Column(
+                children: <Widget>[
+                  new TextFormField(
+                    decoration: new InputDecoration(labelText: 'Email', )
+                  ),//textFormField
+                  new TextFormField(
+                    decoration: new InputDecoration(labelText: 'Password', 
+
+                    ),// InputDecoration
+
+                  ),// textFormField
+
+                ],//<widget>
+              )//colums
+            )//form
+          ) //container
          
         );
   }
