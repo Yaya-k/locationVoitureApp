@@ -13,7 +13,7 @@ class Myapp extends StatelessWidget {
       theme: new ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new LoginPage()
+      home: new LoginPage();
     )
  
 
