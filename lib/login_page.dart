@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() => new _LoginPageState();
+}
+class _LoginPageState extends State<LoginPage>{
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -10,7 +14,7 @@ class LoginPage extends StatelessWidget {
           body: new Container(
             child: new Text('data')
           )
-          
+         
         );
   }
 }
